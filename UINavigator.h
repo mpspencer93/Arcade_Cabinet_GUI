@@ -1,4 +1,8 @@
 #pragma once
+// Include wxWidgets library
+#include "wx/wx.h"
+
+// Windows system includes
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -16,11 +20,10 @@ public:
 
 	// Within the game directory, return the name of each game within a vector. 
 	// A vector is like a doubly linked array structure within c++.
-	vector<string> GameList();
+	vector<wxString> GameList();
 
 	// This function will take the name of the game, go into its folder, and execture the
 	// game for the user to play.
 	void ExecGame(string game);
 
 };
-
